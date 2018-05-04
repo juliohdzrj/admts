@@ -22,6 +22,7 @@ $db = $database->getConnection();
 $page_title = "Administrador de contenido - SMB";
 include_once "header.php";
 echo "<div class='right-button-margin'>";
+	echo "<br><a href='redcomercial.php' class='btn btn-default pull-right left-margin'>PDF TARJETA</a>";
     echo "<a href='redcomercial.php' class='btn btn-default pull-right left-margin'>Promociones red comercial</a>";
 	echo "<a href='redmedica.php' class='btn btn-default pull-right left-margin'>Promociones red médica</a>";
 	echo "<a href='fichaRedComercial.php' class='btn btn-default pull-right left-margin'>Fichas red comercial</a>";
