@@ -1,0 +1,188 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<dom-module id="demo-element">
+    <template>
+        <custom-style>
+            <style is="custom-style" include="iron-flex iron-flex-alignment"></style>
+            <style is="custom-style">
+                .container{
+                    /*background-color: #ccc;
+                    padding: 4px;*/
+                    line-break: auto;
+                }
+                /*.container div.gridcol{
+                    /*background-color: white;*/
+                   /* padding: 12px;
+                    margin: 6px;
+                }*/
+
+                .container div.gridcol2{
+                    margin: 3%;
+                }
+
+                .flex-horizontal {
+                    @apply --layout-horizontal;
+                }
+                .flexchild {
+                    @apply --layout-flex;
+                }
+
+                /*.flex-wrap {
+                    @apply --layout-horizontal;
+                    @apply --layout-wrap;
+                }
+
+                .flex-equal-around-justified {
+                    @apply --layout-horizontal;
+                    @apply --layout-around-justified;
+                }
+
+                .flex-equal-justified {
+                    @apply --layout-horizontal;
+                    @apply --layout-justified;
+                }*/
+
+                .flex-center-justified {
+                    @apply --layout-horizontal;
+                    @apply --layout-center-justified;
+                }
+
+                /*.flex-stretch-align {
+                    @apply --layout-horizontal;
+                    height: 120px;
+                }
+                .flex {
+                    @apply --layout-horizontal;
+                }*/
+
+                /*layout general*/
+
+                /*.flex-vertical {
+                    @apply --layout-vertical;
+                    /*height: 220px;*/
+                /*}*/
+                /*.flexchild-vertical {
+                    @apply --layout-flex;
+                }*/
+
+                .divback > div{
+                    background-color: #cccccc;
+                }
+                .flex-center-justified {
+                    @apply --layout-horizontal;
+                    @apply --layout-center-justified;
+                }
+                .child2 {
+                    @apply --layout-self-center;
+                }
+
+
+                .breakword{
+                    word-break: break-all;
+                    word-wrap: break-word;
+                }
+                .imgfull{
+                    width: 100%;
+                }
+                .logoleft{
+                    width: 50px;
+                }
+                .logoright{
+                    width:100px;
+                }
+                .widthGrid{
+                    width: 100%;
+                    /*background-color: #cccccc;*/
+                    /*padding-bottom: 3%;*/
+                }
+                .widthContent{
+                    width: 100%;
+                    padding: 3%;
+                    /*background-color: #03A9F4;*/
+                }
+                .imageFamily{
+                    background: url("../../img/familiar.png") no-repeat bottom;
+                    background-size: cover;
+                    /*background-image: url("../../img/familiar.png");
+                    background-repeat: no-repeat;
+                    background-position: bottom;*/
+                    height: 224px;
+                }
+
+                /*.flex-vertical {
+                    @apply --layout-vertical;
+                }
+                .flexchild-vertical {
+                    @apply --layout-flex;
+                }*/
+
+                @media (min-width: 426px) {
+                    /* For mobile phones: */
+                    .widthGrid{
+                        width: 425px;
+                    }
+                }
+
+
+            </style>
+        </custom-style>
+        <!--GRID PARA FICHAS-->
+        <!--div class="container flex-wrap flex-stretch-align flex-equal-around-justified ">
+            <div class="gridcol">one</div>
+            <div class="gridcol">two</div>
+            <div class="gridcol">three</div>
+            <div class="gridcol">four</div>
+        </div-->
+        <!--GRID UNA COLUMNA CENTRADA-->
+        <!--div  class="container flex-stretch-align flex-center-justified breakword">
+            <div class="gridcol">center-justified aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+        </div-->
+
+
+
+        <div  class="container  flex-center-justified breakword">
+           <div class="widthGrid">
+               <!--GRID header-->
+               <div class="container flex-horizontal ">
+                   <div class="child2 gridcol2">
+                       <div class="logoleft">
+                           <img src="../../img/logoro-08.svg" class="imgfull" alt="">
+                       </div>
+                   </div>
+                   <div class="flexchild gridcol2">&nbsp;</div>
+                   <div class="child2 gridcol2">
+                       <div class="logoright">
+                           <img src="../../img/logosmb-09.svg" class="imgfull" alt="">
+                       </div>
+                   </div>
+               </div>
+
+
+               <div  class="container flex-center-justified">
+                   <div class="widthContent breakword imageFamily">
+                       <!--CONTENIDO-->
+
+
+
+
+
+
+                   </div>
+               </div>
+               </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+    </template>
+    <script>Polymer({is: "demo-element"});</script>
+</dom-module>
